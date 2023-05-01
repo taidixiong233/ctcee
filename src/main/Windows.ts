@@ -41,10 +41,12 @@ export default class Windows {
       frame: false,
       resizable: false,
       transparent: true,
+      type: 'toolbar',
       x: screen.getPrimaryDisplay().workAreaSize.width - 160,
       y: screen.getPrimaryDisplay().workAreaSize.height - 100,
       useContentSize: true,
       webPreferences: {
+        devTools: false,
         preload: join(__dirname, '../preload/index.js'),
         sandbox: false
       }
@@ -85,6 +87,7 @@ export default class Windows {
       useContentSize: true,
       transparent: true,
       webPreferences: {
+        devTools: false,
         preload: join(__dirname, '../preload/index.js'),
         sandbox: false
       }

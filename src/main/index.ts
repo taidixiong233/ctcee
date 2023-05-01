@@ -9,7 +9,6 @@ app.whenReady().then(() => {
   })
 
   new Windows(app)
-  console.log(process.argv)
   app.on('activate', function () {
     if (BrowserWindow.getAllWindows().length === 0) new Windows(app)
   })

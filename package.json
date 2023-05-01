@@ -1,6 +1,6 @@
 {
   "name": "ctcee",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "高考倒计时 Countdown to the college entrance examination",
   "main": "./out/main/index.js",
   "author": "maohaoji.com",

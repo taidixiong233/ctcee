@@ -107,6 +107,7 @@ export default defineComponent({
   left: 0px;
   top: 0px;
   border-radius: 8px;
+  user-select: none;
 }
 
 .home-body-head-close {

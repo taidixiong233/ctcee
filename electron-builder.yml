@@ -1,5 +1,5 @@
-appId: com.electron.app
-productName: ctcee
+appId: com.maohaoji.ctcee
+productName: 高考倒计时ctcee
 directories:
   buildResources: build
 files:
@@ -12,8 +12,15 @@ asarUnpack:
   - resources/*
 afterSign: build/notarize.js
 win:
-  executableName: ctcee
+  executableName: 高考倒计时ctcee
 nsis:
+  oneClick: false
+  allowElevation: true
+  allowToChangeInstallationDirectory: true
+  installerIcon: "./build/icon.ico"
+  uninstallerIcon: "./build/icon.ico"
+  installerHeaderIcon: "./build/icon.ico"
+  createStartMenuShortcut: true
   artifactName: ${name}-${version}-setup.${ext}
   shortcutName: ${productName}
   uninstallDisplayName: ${productName}
@@ -32,11 +39,8 @@ linux:
     - AppImage
     - snap
     - deb
-  maintainer: electronjs.org
+  maintainer: maohaoji.com
   category: Utility
 appImage:
   artifactName: ${name}-${version}.${ext}
 npmRebuild: false
-publish:
-  provider: generic
-  url: https://example.com/auto-updates

@@ -55,6 +55,7 @@ export default defineComponent({
   border-radius: 9px;
   background-color: rgba(211, 237, 252, 0.85);
   z-index: 3;
+  user-select: none;
 }
 
 .settings-head {

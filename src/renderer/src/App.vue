@@ -8,7 +8,6 @@ export default defineComponent({
   created() {
     this.init()
     window.electron.ipcRenderer.on('config_init', () => {
-      console.log(2)
       this.init()
     })
   },

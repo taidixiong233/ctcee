@@ -1,6 +1,6 @@
 # ctcee
 
-An Electron application with Vue and TypesSript
+高考倒计时程序
 
 ## Recommended IDE Setup
 
@@ -8,19 +8,19 @@ An Electron application with Vue and TypesSript
 
 ## Project Setup
 
-### Install
+### 安装依赖
 
 ```bash
 $ npm install
 ```
 
-### Development
+### 开发环境运行
 
 ```bash
 $ npm run dev
 ```
 
-### Build
+### 编译
 
 ```bash
 # For windows

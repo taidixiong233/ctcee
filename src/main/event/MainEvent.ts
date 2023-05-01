@@ -48,7 +48,6 @@ export default class MainEvent {
     })
 
     ipcMain.on('updata_config_file', () => {
-      console.log(1)
       this.MainWin.webContents.send('config_init')
     })
   }
@@ -69,10 +68,9 @@ export default class MainEvent {
     if (is.dev && process.env['ELECTRON_RENDERER_URL']) {
       this.Root = join(app.getPath('exe').replace(/electron.exe/g, ''), './config')
     } else {
-      this.Root = join(app.getPath('exe').replace(/ctcee.exe/g, ''), './config')
+      this.Root = join(app.getPath('exe').replace(/高考倒计时ctcee.exe/g, ''), './config')
     }
 
-    console.log(this.Root)
 
     if (!fs.existsSync(this.Root)) {
       fs.mkdirSync(this.Root)
