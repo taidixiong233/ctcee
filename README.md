@@ -1,12 +1,8 @@
-# ctcee
+# 高考倒计时程序 ctcee
 
-高考倒计时程序
+高考倒计时程序 Countdown to the college entrance examination
 
-## Recommended IDE Setup
-
-- [VSCode](https://code.visualstudio.com/) + [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) + [Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
-
-## Project Setup
+## 运行项目
 
 ### 安装依赖
 
